@@ -11,11 +11,11 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="container col-sm-12">
-			<?php if ( has_nav_menu( 'footer-menu' ) ) { /* if menu location 'primary-menu' exists then use custom menu */
+			<?php if ( has_nav_menu( 'footer-menu' ) ) {
 		        wp_nav_menu( array( 'theme_location' => 'footer-menu') ); 
 		    }?>
-		    <?php dynamic_sidebar('sidebar-footer'); ?>
+		<div class="container">
+		    <div class="footer-widgets"><?php dynamic_sidebar('sidebar-footer'); ?></div>
 			<div class="site-info">
 				<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'test' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'test' ), 'WordPress' ); ?></a>
 				<span class="sep"> | </span>

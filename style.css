@@ -41,6 +41,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Media
 	## Captions
 	## Galleries
+# General Styling
+# Responsive
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
@@ -886,4 +888,42 @@ object {
 
 .gallery-caption {
 	display: block;
+}
+
+/*--------------------------------------------------------------------------------------------------
+# General Styling
+--------------------------------------------------------------------------------------------------*/
+
+/*--- masthead ---*/
+	#topbar{background:#CCC;}
+	#topbar ul{margin:0;padding:0;}
+	#topbar ul li{list-style-type:none;float:left;}
+	#topbar ul li a{padding:1em 1em 1em 0em;color:#FFF;display:block;}
+
+	#masthead{background:#EFEFEF;}
+	.site-branding{float:left;}
+	#site-navigation{float:right;width:auto;clear:none;}
+
+/*--- footer ---*/
+	.site-footer{background:#EFEFEF;}
+	.menu-footer-menu-container{overflow:hidden;background:#CCC;}
+	#menu-footer-menu{margin:0;padding:0;margin:0 auto;max-width:1170px;}
+	#menu-footer-menu li{padding:1em 2em;list-style-type:none;float:left;}
+	.footer-widgets {clear: both;overflow: hidden;}
+	.footer-widgets .col-md-4{background:#FFF;}
+	.site-info{clear:both;padding:1em 0em;}
+
+
+/*--------------------------------------------------------------------------------------------------
+# Responsive
+--------------------------------------------------------------------------------------------------*/
+
+/*--- mobile landscape ---*/
+@media only screen and ( max-width: 767px ) {
+
+}
+
+/*--- mobile portrait ---*/
+@media only screen and ( max-width: 479px ) {
+
 }
