@@ -102,6 +102,8 @@ function test_widgets_init() {
 		'before_widget' => '<div class="col-md-4">',
 		'after_widget'	=> '</div>',
 		'description' 	=> 'widgets within footer',
+		'before_title'	=> '<h3 class="widget-title">',
+		'after_title'	=> '</h3>',
 	) );
 
 }
