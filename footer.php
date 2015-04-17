@@ -14,7 +14,7 @@
 			<?php if ( has_nav_menu( 'footer-menu' ) ) {
 		        wp_nav_menu( array( 'theme_location' => 'footer-menu') ); 
 		    }?>
-		<div class="container">
+		<div class="container-fluid">
 		    <div class="footer-widgets"><?php dynamic_sidebar('sidebar-footer'); ?></div>
 			<div class="site-info">
 				<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'test' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'test' ), 'WordPress' ); ?></a>

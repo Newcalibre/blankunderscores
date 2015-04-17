@@ -30,13 +30,13 @@
 
 	<header id="masthead" class="site-header" role="banner">
 		<div id="topbar">
-		  <div class="container nav-container">
+		  <div class="container-fluid nav-container">
 		    <?php if ( has_nav_menu( 'top-menu' ) ) {
 		      wp_nav_menu( array( 'theme_location' => 'top-menu') ); 
 		    }?>
 		   </div>
 		</div><!-- #topbar -->
-		<div class="container">
+		<div class="container-fluid">
 			<div class="site-branding">
 				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 				<h4 class="site-description"><?php bloginfo( 'description' ); ?></h4>
