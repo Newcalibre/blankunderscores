@@ -15,6 +15,9 @@
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> 
 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
 <?php wp_head(); ?>
 </head>
 
@@ -23,6 +26,13 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'test' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
+		<div id="topbar">
+		  <div class="container">
+		    <?php if ( has_nav_menu( 'top-menu' ) ) {
+		      wp_nav_menu( array( 'theme_location' => 'top-menu') ); 
+		    }?>
+		   </div>
+		</div><!-- #topbar -->
 		<div class="site-branding">
 			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>

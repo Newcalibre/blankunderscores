@@ -52,6 +52,9 @@ function test_setup() {
 	register_nav_menus( array(
 		'primary' => __( 'Primary Menu', 'test' ),
 	) );
+	
+	register_nav_menu('footer-menu', __('Footer Menu'));
+	register_nav_menu('top-menu', __('Top Menu'));
 
 	/*
 	 * Switch default core markup for search form, comment form, and comments
@@ -90,9 +93,17 @@ function test_widgets_init() {
 		'description'   => '',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
-		'before_title'  => '<h1 class="widget-title">',
-		'after_title'   => '</h1>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
 	) );
+	register_sidebar( array(
+		'id'          	=> 'sidebar-footer',
+		'name'        	=> 'Footer Widgets',
+		'before_widget' => '<div class="col-md-4">',
+		'after_widget'	=> '</div>',
+		'description' 	=> 'widgets within footer',
+	) );
+
 }
 add_action( 'widgets_init', 'test_widgets_init' );
 
